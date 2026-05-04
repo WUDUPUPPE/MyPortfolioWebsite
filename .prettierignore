@@ -1,0 +1,48 @@
+# === Wird selbst generiert — nie formatieren ===
+node_modules
+dist
+dist-ssr
+.output
+.vinxi
+
+# === Auto-generierte TypeScript Dateien ===
+routeTree.gen.ts
+*.gen.ts
+
+# === Lockfiles — binär oder nicht dein Code ===
+bun.lockb
+pnpm-lock.yaml
+package-lock.json
+
+# === Framework Cache ===
+.nitro
+.tanstack/**
+
+# === Wrangler & Cloudflare ===
+.wrangler
+
+
+# ==== Erklärungen ====
+
+# === Wird selbst generiert ===
+#node_modules        Alle installierten Pakete (500MB+) — Prettier soll die nie anfassen
+#dist                Fertiger Build für den Browser — wird neu generiert
+#dist-ssr            Server-seitiger Build — wird neu generiert
+#.output             Cloudflare/Nitro Build-Output — wird neu generiert
+#.vinxi              Vinxi Build-Cache — intern vom Stack genutzt
+
+# === Auto-generierte TypeScript Dateien ===
+#routeTree.gen.ts    TanStack Router generiert diese Datei automatisch — nie manuell bearbeiten
+#*.gen.ts            Alle zukünftigen auto-generierten TS Dateien — würden beim Formatieren kaputtgehen
+
+# === Lockfiles ===
+#bun.lockb           Buns eigener Lockfile — binäre Datei, Prettier kann sie nicht lesen
+#pnpm-lock.yaml      pnpm Lockfile — nicht dein Code
+#package-lock.json   npm Lockfile — nicht dein Code
+
+# === Framework Cache ===
+#.nitro              Nitro Server-Framework Cache — auto-generiert
+#.tanstack/**        TanStack Router Cache-Ordner — auto-generiert
+
+# === Wrangler & Cloudflare ===
+#.wrangler           Cloudflare Wrangler lokale Daten & Tokens

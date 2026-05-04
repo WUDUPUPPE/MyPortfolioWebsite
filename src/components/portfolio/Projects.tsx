@@ -1,0 +1,178 @@
+import { useState } from "react";
+import { useI18n } from "@/lib/i18n";
+import { Github, ExternalLink, Play, X } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import Autoplay from "embla-carousel-autoplay";
+
+import p1a from "@/assets/project-1-a.jpg";
+import p1b from "@/assets/project-1-b.jpg";
+import p2a from "@/assets/project-2-a.jpg";
+import p2b from "@/assets/project-2-b.jpg";
+import p3a from "@/assets/project-3-a.jpg";
+import p3b from "@/assets/project-3-b.jpg";
+
+interface ProjectMeta {
+  images: string[];
+  repo: string;
+  demo?: string;
+  video?: string;
+}
+
+const projectsMeta: ProjectMeta[] = [
+  {
+    images: [p1a, p1b],
+    repo: "https://github.com/",
+    demo: "https://example.com",
+    video: "https://www.w3schools.com/html/mov_bbb.mp4",
+  },
+  {
+    images: [p2a, p2b],
+    repo: "https://github.com/",
+    demo: "https://example.com",
+  },
+  {
+    images: [p3a, p3b],
+    repo: "https://github.com/",
+    video: "https://www.w3schools.com/html/mov_bbb.mp4",
+  },
+];
+
+export function Projects() {
+  const { t } = useI18n();
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
+
+  const items = t.projects.items.map((it, i) => ({ ...it, ...projectsMeta[i] }));
+
+  return (
+    <section id="projects" className="relative scroll-mt-24 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-12">
+          <p className="mb-2 font-mono text-xs uppercase tracking-widest text-primary">
+            // {t.projects.kicker}
+          </p>
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+            {t.projects.title}
+          </h2>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {items.map((p, i) => (
+            <article
+              key={p.name}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-card backdrop-blur transition-all hover:border-primary/50 hover:shadow-glow"
+            >
+              <Carousel
+                opts={{ loop: true }}
+                plugins={[Autoplay({ delay: 4000 + i * 500, stopOnInteraction: false })]}
+              >
+                <CarouselContent>
+                  {p.images.map((src, idx) => (
+                    <CarouselItem key={idx}>
+                      <div className="relative aspect-video overflow-hidden">
+                        <img
+                          src={src}
+                          alt={`${p.name} screenshot ${idx + 1}`}
+                          loading="lazy"
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-2 h-8 w-8" />
+                <CarouselNext className="right-2 h-8 w-8" />
+              </Carousel>
+
+              <div className="p-6">
+                <h3 className="text-xl font-bold">{p.name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
+
+                <div className="mt-4 flex flex-wrap gap-1.5">
+                  {p.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md border border-border bg-secondary/60 px-2 py-0.5 font-mono text-[11px] text-muted-foreground"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setOpenIdx(i)}
+                  className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
+                >
+                  <Play className="h-4 w-4" />
+                  {p.video ? t.projects.watchDemo : t.projects.viewRepo}
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <Dialog
+        open={openIdx !== null}
+        onOpenChange={(o) => !o && setOpenIdx(null)}
+      >
+        <DialogContent className="max-w-3xl border-border bg-card p-0">
+          {openIdx !== null && (
+            <div className="flex flex-col">
+              {items[openIdx].video ? (
+                <video
+                  src={items[openIdx].video}
+                  controls
+                  autoPlay
+                  className="aspect-video w-full bg-black"
+                />
+              ) : (
+                <img
+                  src={items[openIdx].images[0]}
+                  alt={items[openIdx].name}
+                  className="aspect-video w-full object-cover"
+                />
+              )}
+              <div className="p-6">
+                <h3 className="text-xl font-bold">{items[openIdx].name}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {items[openIdx].description}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  <a
+                    href={items[openIdx].repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2 text-sm font-semibold transition-colors hover:border-primary/60"
+                  >
+                    <Github className="h-4 w-4" />
+                    {t.projects.viewRepo}
+                  </a>
+                  {items[openIdx].demo && (
+                    <a
+                      href={items[openIdx].demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      {t.projects.liveDemo}
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+    </section>
+  );
+}

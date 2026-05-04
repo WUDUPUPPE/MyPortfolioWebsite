@@ -1,0 +1,153 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Dark theme by default - deep purple/black with electric purple + cyan accents */
+  --background: oklch(0.16 0.03 280);
+  --foreground: oklch(0.97 0.01 280);
+
+  --card: oklch(0.21 0.04 280);
+  --card-foreground: oklch(0.97 0.01 280);
+
+  --popover: oklch(0.21 0.04 280);
+  --popover-foreground: oklch(0.97 0.01 280);
+
+  /* Electric purple primary */
+  --primary: oklch(0.68 0.25 305);
+  --primary-foreground: oklch(0.13 0.02 280);
+  --primary-glow: oklch(0.78 0.22 305);
+
+  /* Cyan accent */
+  --accent: oklch(0.78 0.16 200);
+  --accent-foreground: oklch(0.13 0.02 280);
+
+  --secondary: oklch(0.27 0.05 280);
+  --secondary-foreground: oklch(0.97 0.01 280);
+
+  --muted: oklch(0.24 0.04 280);
+  --muted-foreground: oklch(0.7 0.04 280);
+
+  --destructive: oklch(0.65 0.24 25);
+  --destructive-foreground: oklch(0.97 0.01 280);
+
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.68 0.25 305);
+
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.3 0.15 295 / 0.6), transparent 60%),
+    radial-gradient(ellipse at bottom right, oklch(0.35 0.15 220 / 0.4), transparent 60%);
+  --gradient-primary: linear-gradient(135deg, oklch(0.68 0.25 305), oklch(0.78 0.16 200));
+  --gradient-card: linear-gradient(145deg, oklch(0.22 0.05 285 / 0.8), oklch(0.18 0.04 280 / 0.6));
+  --shadow-glow: 0 0 40px oklch(0.68 0.25 305 / 0.35);
+  --shadow-elegant: 0 20px 60px -10px oklch(0.1 0.05 280 / 0.6);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, oklch(0.35 0.18 295 / 0.4), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 100%, oklch(0.3 0.15 220 / 0.25), transparent);
+    background-attachment: fixed;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: oklch(0.68 0.25 305 / 0.4);
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: var(--gradient-primary);
+  }
+  .bg-gradient-card {
+    background-image: var(--gradient-card);
+  }
+  .text-gradient {
+    background-image: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(oklch(1 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(1 0 0 / 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out both;
+  }
+  .animate-glow-pulse {
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px oklch(0.68 0.25 305 / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 50px oklch(0.68 0.25 305 / 0.6);
+  }
+}

@@ -1,0 +1,73 @@
+# === Wird selbst generiert ===
+node_modules
+dist
+dist-ssr
+.output
+*.local
+
+# === Logs & Debug ===
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === Framework Cache ===
+.vinxi
+.tanstack/**
+.nitro
+
+# === Wrangler & Cloudflare ===
+.wrangler/
+.dev.vars
+
+# === Editor-Dateien ===
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==== Erklärungen ====
+
+# === Wird selbst generiert ===
+#node_modules        Alle installierten Pakete (500MB+) — jeder macht "bun install" selbst
+#dist                Fertiger Build für den Browser — wird neu generiert
+#dist-ssr            Server-seitiger Build — wird neu generiert
+#.output             Cloudflare/Nitro Build-Output — wird neu generiert
+#*.local             Lokale Konfig-Dateien nur für deinen Rechner
+
+# === Logs & Debug ===
+#logs                Log-Ordner allgemein
+#*.log               Alle .log Dateien
+#npm-debug.log*      npm Fehlerlog
+#yarn-debug.log*     Yarn Fehlerlog
+#yarn-error.log*     Yarn Fehlerlog
+#pnpm-debug.log*     pnpm Fehlerlog
+#lerna-debug.log*    Lerna (Monorepo-Tool) Fehlerlog
+
+# === Framework Cache ===
+#.vinxi              Vinxi Build-Cache (intern von deinem Stack genutzt)
+#.tanstack/**        TanStack Router auto-generierte Dateien
+#.nitro              Nitro Server-Framework Cache
+
+# === Wrangler & Cloudflare ===
+#.wrangler/          Cloudflare Wrangler lokale Daten & Tokens
+#.dev.vars           Geheime lokale Variablen — NIEMALS ins Repo!
+
+# === Editor-Dateien ===
+#.vscode/*                    Deine persönlichen VS Code Einstellungen
+#!.vscode/extensions.json     Ausnahme: Diese Datei DOCH committen (empfiehlt Extensions)
+#.idea                        JetBrains Editor Einstellungen (WebStorm etc.)
+#.DS_Store                    Mac unsichtbare Systemdatei — nutzlos für andere
+#*.suo                        Visual Studio Projektdatei
+#*.ntvs*                      Node Tools für Visual Studio
+#*.njsproj                    Node.js Projektdatei (altes Visual Studio)
+#*.sln                        Visual Studio Solution-Datei
+#*.sw?                        Vim/Neovim temporäre Swap-Dateien
