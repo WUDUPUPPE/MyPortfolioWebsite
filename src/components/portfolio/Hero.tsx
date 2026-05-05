@@ -20,8 +20,8 @@ export function Hero() {
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
             {t.hero.greeting}
           </p>
-          <h1 className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
-            Max <span className="text-gradient">Mustermann</span>
+          <h1 className="text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-6xl">
+            Tejani <span className="text-gradient">Awudu Mohammed</span>
           </h1>
           <p className="mt-3 font-mono text-lg text-muted-foreground sm:text-xl">
             {"<"}
@@ -77,7 +77,7 @@ export function Hero() {
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                   <Github className="h-4 w-4" />
                 </span>
-                <span>github.com/maxdev</span>
+                <span>github.com/wudupuppe</span>
               </a>
             </li>
             <li>
@@ -90,7 +90,7 @@ export function Hero() {
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                   <Linkedin className="h-4 w-4" />
                 </span>
-                <span>linkedin.com/in/max</span>
+                <span>linkedin.com/in/tejani</span>
               </a>
             </li>
             <li>

@@ -81,21 +81,14 @@ export const translations = {
       items: {
         work: [
           {
-            period: "2023 – heute",
-            role: "Senior Frontend Developer",
-            company: "Tech Startup GmbH",
-            description:
-              "Verantwortlich für Architektur und Entwicklung der Web-Plattform mit React und TypeScript.",
-          },
-          {
-            period: "2021 – 2023",
+            period: "2025 – heute",
             role: "Full-Stack Developer",
             company: "Digital Agency",
             description:
               "Entwicklung von individuellen Kundenprojekten – von Landing Pages bis komplexen Web-Apps.",
           },
           {
-            period: "2019 – 2021",
+            period: "2024 – heute",
             role: "Junior Web Developer",
             company: "WebStudio",
             description:

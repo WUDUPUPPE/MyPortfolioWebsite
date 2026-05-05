@@ -2,6 +2,17 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 
+const MAINTENANCE_MODE = true;
+
+function MaintenanceBanner() {
+  if (!MAINTENANCE_MODE) return null;
+  return (
+    <div className="sticky top-0 z-[9999] w-full bg-yellow-400 px-4 py-2.5 text-center text-sm font-semibold text-yellow-900">
+      🔧 Diese Seite wird gerade gewartet — einige Bereiche sind möglicherweise unvollständig oder nicht verfügbar.
+    </div>
+  );
+}
+
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -57,6 +68,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
+        <MaintenanceBanner />
         {children}
         <Scripts />
       </body>
