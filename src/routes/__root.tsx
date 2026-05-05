@@ -8,7 +8,7 @@ function MaintenanceBanner() {
   if (!MAINTENANCE_MODE) return null;
   return (
     <div className="sticky top-0 z-[9999] w-full bg-yellow-400 px-4 py-2.5 text-center text-sm font-semibold text-yellow-900">
-      🔧 Diese Seite wird gerade gewartet — einige Bereiche sind möglicherweise unvollständig oder nicht verfügbar.
+      ❗ ❗      🧑🏾‍🔧      ⚙️      🛠️       Diese Seite wird gerade gewartet — einige Bereiche sind möglicherweise unvollständig oder nicht verfügbar.      🛠️      ⚙️      🧑🏾‍🔧      ❗ ❗
     </div>
   );
 }
@@ -40,14 +40,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "professionelle website" },
+      { name: "description", content: "Portfolio Website von Tejani" },
+      { name: "author", content: "Tejani Awudu Mohammed" },
+      { property: "og:title", content: "professionelle website" },
+      { property: "og:description", content: "Portfolio Website von Tejani" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "instagram:site", content: "@wudupuppe_" },
     ],
     links: [
       {
