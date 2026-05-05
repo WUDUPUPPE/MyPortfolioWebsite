@@ -12,13 +12,13 @@ import { Contact, Footer } from "@/components/portfolio/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Max Mustermann — Developer & Engineer Portfolio" },
+      { title: "Tejani Awudu Mohammed — Developer & Engineer Portfolio" },
       {
         name: "description",
         content:
-          "Modernes Portfolio von Max Mustermann — Developer & Engineer. Projekte, Skills, Erfahrung und Kontakt.",
+          "Portfolio von Tejani Awudu Mohammed — Developer & Engineer. Projekte, Skills, Erfahrung und Kontakt.",
       },
-      { property: "og:title", content: "Max Mustermann — Developer Portfolio" },
+      { property: "og:title", content: "Tejani Awudu Mohammed — Developer Portfolio" },
       {
         property: "og:description",
         content:

@@ -107,7 +107,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border/60 py-8">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 text-xs text-muted-foreground sm:flex-row">
-        <p>© {new Date().getFullYear()} Max Mustermann. {t.footer.rights}</p>
+        <p>© {new Date().getFullYear()} Tejani Awudu Mohammed. {t.footer.rights}</p>
         <p className="font-mono">{t.footer.built} · React + TanStack</p>
       </div>
     </footer>
