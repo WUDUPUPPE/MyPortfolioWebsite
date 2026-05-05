@@ -16,7 +16,7 @@ export const translations = {
       greeting: "Hallo, ich bin",
       role: "Fachinformatiker für Anwendungsentwicklung",
       tagline:
-        "Mit Leidenschaft entwickle ich Web- und Mobile-Anwendungen. Zusätzlich vertiefe ich mich in Android, Dart/Flutter sowie Game-Dev und bringe praktische Erfahrung durch eigener Server-Administration und Hosting mit.",
+        "Mit Leidenschaft entwickle ich Web- und Mobile-Anwendungen. Zusätzlich vertiefe ich mich in Android, Dart/Flutter sowie Game-Dev und bringe praktische Erfahrung mit durch eigener Server-Administration und Hosting.",
       cta: {
         projects: "Projekte",
         skills: "Skills",
