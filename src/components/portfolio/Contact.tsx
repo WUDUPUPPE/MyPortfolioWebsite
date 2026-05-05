@@ -82,9 +82,9 @@ export function Contact() {
 
         <div className="mt-10 flex items-center justify-center gap-4">
           {[
-            { icon: Github, href: "https://github.com/" },
-            { icon: Linkedin, href: "https://linkedin.com/" },
-            { icon: Mail, href: "mailto:hello@example.com" },
+            { icon: Github, href: "https://github.com/wudupuppe" },
+            { icon: Linkedin, href: "https://linkedin.com/in/tejani-awudu-mohammed/" },
+            { icon: Mail, href: "mailto:tejani-awudu.de" },
           ].map(({ icon: Icon, href }, i) => (
             <a
               key={i}

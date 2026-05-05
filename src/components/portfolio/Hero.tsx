@@ -69,7 +69,7 @@ export function Hero() {
           <ul className="space-y-3 text-sm">
             <li>
               <a
-                href="https://github.com/"
+                href="https://github.com/wudupuppe"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary"
@@ -82,7 +82,7 @@ export function Hero() {
             </li>
             <li>
               <a
-                href="https://linkedin.com/"
+                href="https://linkedin.com/in/tejani-awudu-mohammed/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary"
@@ -90,36 +90,36 @@ export function Hero() {
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                   <Linkedin className="h-4 w-4" />
                 </span>
-                <span>linkedin.com/in/tejani</span>
+                <span>linkedin.com/tejani</span>
               </a>
             </li>
             <li>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:tejani-awudu.de"
                 className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                   <Mail className="h-4 w-4" />
                 </span>
-                <span>hello@example.com</span>
+                <span>kontakt@tejani-awudu.de</span>
               </a>
             </li>
             <li>
               <a
-                href="tel:+491234567890"
+                href="tel:+4917661604732"
                 className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                   <Phone className="h-4 w-4" />
                 </span>
-                <span>+49 123 456 7890</span>
+                <span>+49176 61604732</span>
               </a>
             </li>
             <li className="flex items-center gap-3 text-muted-foreground">
               <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
                 <MapPin className="h-4 w-4" />
               </span>
-              <span>Berlin, Deutschland</span>
+              <span>Gelsenkirchen, Deutschland</span>
             </li>
           </ul>
         </aside>
