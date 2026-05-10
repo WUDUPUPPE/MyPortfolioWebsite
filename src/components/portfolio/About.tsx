@@ -1,13 +1,13 @@
 import { useI18n } from "@/lib/i18n";
-import avatar from "@/assets/avatar.jpg";
+import avatar from "@/assets/cyberpunkmy.jpg";
 
 export function About() {
   const { t } = useI18n();
 
   const stats = [
-    { value: "5+", label: t.about.stats.years },
-    { value: "30+", label: t.about.stats.projects },
-    { value: "20+", label: t.about.stats.tech },
+    { value: "1+", label: t.about.stats.years },
+    { value: "5+", label: t.about.stats.projects },
+    { value: "9+", label: t.about.stats.tech },
     { value: "∞", label: t.about.stats.coffee },
   ];
 
