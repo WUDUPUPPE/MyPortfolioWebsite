@@ -1,5 +1,5 @@
 import { useI18n } from "@/lib/i18n";
-import avatar from "@/assets/cyberpunkmy.jpg";
+import avatar from "@/assets/cyberpunkmy.png";
 
 export function About() {
   const { t } = useI18n();

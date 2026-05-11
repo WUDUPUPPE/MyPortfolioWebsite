@@ -28,7 +28,7 @@ export const translations = {
     about: {
       title: "Über mich",
       kicker: "Wer ich bin",
-      bio: "Ich bin ein leidenschaftlicher Developer mit Fokus auf Frontend, Backend und Full-Stack Web-Entwicklung. Ich liebe es, Ideen in elegante, performante Produkte zu verwandeln. Von Konzept über Design bis Deployment – ich begleite Projekte ganzheitlich und lerne ständig dazu.",
+      bio: "Meine vielseitigen Berufserfahrungen machen mich anpassungsfähig, strukturiert und lernbereit. Analytisches Denken, IT-Kenntnisse und Sorgfalt helfen mir dabei, Aufgaben präzise und zielorientiert lösen. Neben der Anwendungsentwicklung betreibe ich einen eigenen Heimserver und sammle aktiv Erfahrungen in den Bereichen Docker, Nginx, Cloudflare DNS und SSL, da ich verstehen möchte, wie Software nicht nur entsteht, sondern auch Verwaltet wird und in die Welt kommt. Als teamorientierter Entwickler suche ich aktiv nach Herausforderungen, die mich fachlich und persönlich weiterbringen.",
       stats: {
         years: "Jahre Erfahrung",
         projects: "Abgeschlossene Projekte",
@@ -39,28 +39,28 @@ export const translations = {
     projects: {
       title: "Projekte",
       kicker: "Eine Auswahl meiner Arbeiten",
-      viewRepo: "GitHub Repo",
+      viewRepo: "View Repo",
       liveDemo: "Live Demo",
       watchDemo: "Demo Video",
       close: "Schließen",
       items: [
         {
-          name: "Analytics Dashboard",
+          name: "SONAR",
           description:
-            "Eine moderne Echtzeit-Analytics Plattform mit anpassbaren Widgets, Live-Charts und Team-Kollaboration.",
-          tech: ["React", "TypeScript", "TailwindCSS", "Node.js", "PostgreSQL"],
+            "Du kennst das: Ein Song läuft, du weißt den Namen nicht. SONAR löst genau das – per Knopfdruck hört die App zu, analysiert das Audiosignal über die ACRCloud-API und zeigt dir Titel, Artist und Album in Sekunden. Erkannte Songs landen automatisch in deiner persönlichen Bibliothek, gespeichert in Firebase Firestore. Gebaut mit Flutter & Dart, mit sauber getrennter Feature-Architektur und Dark/Light-Mode.",
+          tech: ["Flutter", "Dart", "Firebase", "ACRCloud", "Firestore", "Android"],
+        },
+        {
+          name: "HomeServer",
+          description:
+            "Ein alter Gaming-PC, neu gedacht: Vollständig selbst aufgebauter Home Server auf Debian 13 mit Docker-Infrastruktur, eigenem Reverse Proxy, VPN-Zugriff via Tailscale, Nextcloud, Jellyfin mit NVIDIA GPU-Transcoding, Vaultwarden und netzwerkweitem DNS-Werbeblocker – öffentlich erreichbar über wudupuppe.info.",
+          tech: ["Debian", "Docker", "Nginx", "Cloudflare", "Tailscale", "Nextcloud", "Jellyfin", "Linux"],
         },
         {
           name: "E-Commerce Platform",
           description:
             "Vollständiger Online-Shop mit Stripe-Integration, Lagerverwaltung und Admin-Dashboard.",
           tech: ["Next.js", "Stripe", "Prisma", "TailwindCSS"],
-        },
-        {
-          name: "AI Chat Assistant",
-          description:
-            "KI-gestützter Chat mit Streaming-Antworten, Konversationsverlauf und Code-Highlighting.",
-          tech: ["React", "OpenAI", "Edge Functions", "Vite"],
         },
       ],
     },

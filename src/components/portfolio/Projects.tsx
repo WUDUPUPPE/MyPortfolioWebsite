@@ -93,7 +93,7 @@ export function Projects() {
 
               <div className="p-6">
                 <h3 className="text-xl font-bold">{p.name}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
+                <p className="mt-2 text-sm text-muted-foreground line-clamp-4">{p.description}</p>
 
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {p.tech.map((tech) => (
@@ -147,15 +147,17 @@ export function Projects() {
                   {items[openIdx].description}
                 </p>
                 <div className="mt-4 flex flex-wrap gap-3">
-                  <a
-                    href={items[openIdx].repo}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2 text-sm font-semibold transition-colors hover:border-primary/60"
-                  >
-                    <Github className="h-4 w-4" />
-                    {t.projects.viewRepo}
-                  </a>
+                  {items[openIdx].repo && (
+                    <a
+                      href={items[openIdx].repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary px-4 py-2 text-sm font-semibold transition-colors hover:border-primary/60"
+                    >
+                      <Github className="h-4 w-4" />
+                      {t.projects.viewRepo}
+                    </a>
+                  )}
                   {items[openIdx].demo && (
                     <a
                       href={items[openIdx].demo}

@@ -12,17 +12,17 @@ import { Contact, Footer } from "@/components/portfolio/Contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tejani Awudu Mohammed — Developer & Engineer Portfolio" },
+      { title: "Tejani Awudu Mohammed — Fachinformatiker für Anwendungsentwicklung" },
       {
         name: "description",
         content:
-          "Portfolio von Tejani Awudu Mohammed — Developer & Engineer. Projekte, Skills, Erfahrung und Kontakt.",
+          "Portfolio von Tejani Awudu Mohammed — Entwickler. Projekte, Skills, Erfahrung und Kontakt.",
       },
-      { property: "og:title", content: "Tejani Awudu Mohammed — Developer Portfolio" },
+      { property: "og:title", content: "Tejani Awudu Mohammed — Entwickler Portfolio" },
       {
         property: "og:description",
         content:
-          "Developer & Engineer aus Berlin. Projekte mit React, TypeScript, Node.js und mehr.",
+          "Fachinformatiker für Anwendungsentwicklung aus Gelsenkirchen. Projekte mit Android, Dart/Flutter, GoDot4, Server-Hosting, React, TypeScript, Node.js und mehr.",
       },
       { property: "og:type", content: "website" },
     ],
