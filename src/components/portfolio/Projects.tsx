@@ -17,6 +17,8 @@ import p2a from "@/assets/project-2-a.jpg";
 import p2b from "@/assets/project-2-b.jpg";
 import p3a from "@/assets/project-3-a.jpg";
 import p3b from "@/assets/project-3-b.jpg";
+import p4a from "@/assets/project-1-a.jpg";
+import p4b from "@/assets/project-1-b.jpg";
 
 interface ProjectMeta {
   images: string[];
@@ -28,19 +30,22 @@ interface ProjectMeta {
 const projectsMeta: ProjectMeta[] = [
   {
     images: [p1a, p1b],
-    repo: "https://github.com/",
-    demo: "https://example.com",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
+    repo: "https://github.com/WUDUPUPPE/musik_app",
+    demo: "",
+    video: "",
   },
   {
     images: [p2a, p2b],
-    repo: "https://github.com/",
-    demo: "https://example.com",
+    repo: "",
   },
   {
     images: [p3a, p3b],
-    repo: "https://github.com/",
-    video: "https://www.w3schools.com/html/mov_bbb.mp4",
+    repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite",
+    video: "",
+  },
+  {
+    images: [p4a, p4b],
+    repo: "https://github.com/WUDUPUPPE/App-Launcher"
   },
 ];
 
@@ -112,7 +117,7 @@ export function Projects() {
                   className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
                 >
                   <Play className="h-4 w-4" />
-                  {p.video ? t.projects.watchDemo : t.projects.viewRepo}
+                  {p.video ? t.projects.watchDemo : p.repo ? t.projects.viewRepo : t.projects.learnMore}
                 </button>
               </div>
             </article>

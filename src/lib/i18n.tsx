@@ -39,9 +39,10 @@ export const translations = {
     projects: {
       title: "Projekte",
       kicker: "Eine Auswahl meiner Arbeiten",
-      viewRepo: "View Repo",
+      viewRepo: "Zeige Projekt",
       liveDemo: "Live Demo",
       watchDemo: "Demo Video",
+      learnMore: "Mehr Erfahren",
       close: "Schließen",
       items: [
         {
@@ -49,18 +50,27 @@ export const translations = {
           description:
             "Du kennst das: Ein Song läuft, du weißt den Namen nicht. SONAR löst genau das – per Knopfdruck hört die App zu, analysiert das Audiosignal über die ACRCloud-API und zeigt dir Titel, Artist und Album in Sekunden. Erkannte Songs landen automatisch in deiner persönlichen Bibliothek, gespeichert in Firebase Firestore. Gebaut mit Flutter & Dart, mit sauber getrennter Feature-Architektur und Dark/Light-Mode.",
           tech: ["Flutter", "Dart", "Firebase", "ACRCloud", "Firestore", "Android"],
+          repo: "https://github.com/WUDUPUPPE/musik_app"
         },
         {
           name: "HomeServer",
           description:
-            "Ein alter Gaming-PC, neu gedacht: Vollständig selbst aufgebauter Home Server auf Debian 13 mit Docker-Infrastruktur, eigenem Reverse Proxy, VPN-Zugriff via Tailscale, Nextcloud, Jellyfin mit NVIDIA GPU-Transcoding, Vaultwarden und netzwerkweitem DNS-Werbeblocker – öffentlich erreichbar über wudupuppe.info.",
+            "Ein alter Gaming-PC, neu gedacht: Vollständig selbst aufgebauter Home Server auf Debian 13 mit Docker-Infrastruktur, eigenem Reverse Proxy, VPN-Zugriff via Tailscale, Nextcloud, Jellyfin mit NVIDIA GPU-Transcoding, Vaultwarden und netzwerkweitem DNS-Werbeblocker.",
           tech: ["Debian", "Docker", "Nginx", "Cloudflare", "Tailscale", "Nextcloud", "Jellyfin", "Linux"],
         },
         {
-          name: "E-Commerce Platform",
+          name: "Pflege-EXAM Lernwebsite",
           description:
-            "Vollständiger Online-Shop mit Stripe-Integration, Lagerverwaltung und Admin-Dashboard.",
-          tech: ["Next.js", "Stripe", "Prisma", "TailwindCSS"],
+            "Meine Freundin brauchte eine gezielte Lernwerkzeug für ihre Examinierte Abschlussprüfung, also habe ich mit ihren Unterlagen eine gebaut. 800+ Prüfungsfragen aus denn verschiedensten Themenbereichen, intelligentes Stichwort-Matching statt exaktem Textvergleich, Fehlertraining und ein Statistik-Dashboard. Bewusst ohne Framework - läuft vollständig offline als eine einzige HTML-Datei.",
+          tech: ["HTML5", "CSS3", "JavaScript", "localStorage"],
+          repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite"
+        },
+        {
+          name: "App-Launcher",
+          description:
+            "Ein Android Streaming-Launcher der YouTube, Spotify und Crunchyroll in einer App bündelt. Mit Login-System, BCrypt-Passwort-Hashing, SQLite-Datenbank und drei API-Anbindungen. Entwickelt in Java mit sauberem Manager-Pattern und OOP-Prinzipien – als Schulprojekt für die Ausbildung zum Fachinformatiker.",
+          tech: ["Java", "Android", "SQLite", "YouTube API", "Spotify API", "XML"],
+          repo: "https://github.com/WUDUPUPPE/App-Launcher"
         },
       ],
     },
@@ -126,7 +136,7 @@ export const translations = {
     },
     footer: {
       rights: "Alle Rechte vorbehalten.",
-      built: "Mit Liebe gebaut",
+      built: "Mit Leidenschaft gebaut",
     },
   },
   en: {
@@ -140,9 +150,9 @@ export const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      role: "Developer & Engineer",
+      role: "IT Specialist for Application Development",
       tagline:
-        "I build modern, performant web applications with clean code and a love for the details.",
+        "I am passionate about developing web and mobile applications. I am also delving deeper into Android, Dart/Flutter, and game development, and I bring practical experience in server administration and hosting.",
       cta: {
         projects: "Projects",
         skills: "Skills",
@@ -154,7 +164,7 @@ export const translations = {
     about: {
       title: "About me",
       kicker: "Who I am",
-      bio: "I'm a passionate developer focused on frontend, backend and full-stack web development. I love turning ideas into elegant, performant products. From concept and design to deployment — I love the whole process and never stop learning.",
+      bio: "My diverse professional experience has made me adaptable, organized, and eager to learn. Analytical thinking, IT skills, and attention to detail help me tackle tasks with precision and focus. In addition to application development, I run my own home server and actively gain experience in Docker, Nginx, Cloudflare DNS, and SSL, as I want to understand not only how software is created, but also how it is managed and deployed. As a team-oriented developer, I actively seek out challenges that help me grow both professionally and personally.",
       stats: {
         years: "Years of experience",
         projects: "Completed projects",
@@ -165,28 +175,37 @@ export const translations = {
     projects: {
       title: "Projects",
       kicker: "A selection of my work",
-      viewRepo: "GitHub Repo",
+      viewRepo: "Show Project",
       liveDemo: "Live Demo",
       watchDemo: "Demo Video",
+      learnMore: "Learn More",
       close: "Close",
       items: [
         {
-          name: "Analytics Dashboard",
+          name: "SONAR",
           description:
-            "A modern real-time analytics platform with customizable widgets, live charts and team collaboration.",
-          tech: ["React", "TypeScript", "TailwindCSS", "Node.js", "PostgreSQL"],
+            "You know how it goes: A song is playing, but you don't know the title. SONAR solves exactly that—with the tap of a button, the app listens, analyzes the audio signal via the ACRCloud API, and shows you the title, artist, and album in seconds. Recognized songs are automatically added to your personal library, stored in Firebase Firestore. Built with Flutter & Dart, featuring a cleanly separated feature architecture and dark/light mode.",
+          tech: ["Flutter", "Dart", "Firebase", "ACRCloud", "Firestore", "Android"],
+          repo: "https://github.com/WUDUPUPPE/musik_app"
         },
         {
-          name: "E-Commerce Platform",
+          name: "HomeServer",
           description:
-            "Full online shop with Stripe integration, inventory management and admin dashboard.",
-          tech: ["Next.js", "Stripe", "Prisma", "TailwindCSS"],
+            "An old gaming PC, reimagined: A fully self-built home server on Debian 13 with Docker infrastructure, reverse proxy, VPN access via Tailscale, Nextcloud, Jellyfin with NVIDIA GPU transcoding, Vaultwarden, and a network-wide DNS ad blocker.",
+          tech: ["Debian", "Docker", "Nginx", "Cloudflare", "Tailscale", "Nextcloud", "Jellyfin", "Linux"],
         },
         {
-          name: "AI Chat Assistant",
+          name: "PFlege-EXAM Learnwebsite",
           description:
-            "AI-powered chat with streaming responses, conversation history and code highlighting.",
-          tech: ["React", "OpenAI", "Edge Functions", "Vite"],
+            "My girlfriend needed a targeted study tool for her final exams, so I built one using her materials. It includes over 800 exam questions covering a wide range of topics, intelligent keyword matching instead of exact text comparison, error analysis, and a statistics dashboard. I deliberately built it without a framework—it runs entirely offline as a single HTML file.",
+          tech: ["HTML5", "CSS3", "JavaScript", "localStorage"],
+          repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite"
+        },
+        {
+          name: "App-Launcher",
+          description:
+            "An Android streaming launcher that combines YouTube, Spotify, and Crunchyroll in a single app. Features a login system with BCrypt password hashing, SQLite database, and three API integrations. Built in Java following the Manager pattern and OOP principles — developed as a vocational school project.",
+          tech: ["Java", "Android", "SQLite", "YouTube API", "Spotify API", "XML"],
         },
       ],
     },
@@ -259,7 +278,7 @@ export const translations = {
     },
     footer: {
       rights: "All rights reserved.",
-      built: "Built with love",
+      built: "Built with passion",
     },
   },
 };
