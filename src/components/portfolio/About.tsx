@@ -6,8 +6,8 @@ export function About() {
 
   const stats = [
     { value: "1+", label: t.about.stats.years },
-    { value: "5+", label: t.about.stats.projects },
-    { value: "9+", label: t.about.stats.tech },
+    { value: "7+", label: t.about.stats.projects },
+    { value: "26+", label: t.about.stats.tech },
     { value: "∞", label: t.about.stats.coffee },
   ];
 

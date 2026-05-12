@@ -84,7 +84,7 @@ export function Contact() {
           {[
             { icon: Github, href: "https://github.com/wudupuppe" },
             { icon: Linkedin, href: "https://linkedin.com/in/tejani-awudu-mohammed/" },
-            { icon: Mail, href: "mailto:tejani-awudu.de" },
+            { icon: Mail, href: "mailto:kontakt@tejani-awudu.de" },
           ].map(({ icon: Icon, href }, i) => (
             <a
               key={i}
