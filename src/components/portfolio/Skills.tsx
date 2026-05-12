@@ -46,7 +46,7 @@ const skillData: { key: "frontend" | "backend" | "tools"; icon: typeof Code2; sk
       { name: "Android Studio",     level: 68 },
       { name: "VS Code",            level: 76 },
       { name: "Self-Hosting (Nextcloud, Bitwarden, Ad Guard-Home, Website, E-Mail)", level: 64 },
-      { name: "KI-Tools (Prompting / Integration)", level: 69 },
+      { name: "KI-Tools (Prompting / Integration)", level: 69},
       { name: "Figma / UI Design",  level: 58 },
     ],
   },

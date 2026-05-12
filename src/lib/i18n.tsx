@@ -20,8 +20,8 @@ export const translations = {
       cta: {
         projects: "Projekte",
         skills: "Skills",
-        experience: "Berufserfahrung",
-        cv: "Lebenslauf",
+        experience: "Erfahrung",
+        cv: "Weiterbildung",
       },
       contactCard: "Kontakt",
     },
@@ -61,7 +61,7 @@ export const translations = {
         {
           name: "Pflege-EXAM Lernwebsite",
           description:
-            "Meine Freundin brauchte eine gezielte Lernwerkzeug für ihre Examinierte Abschlussprüfung, also habe ich mit ihren Unterlagen eine gebaut. 800+ Prüfungsfragen aus denn verschiedensten Themenbereichen, intelligentes Stichwort-Matching statt exaktem Textvergleich, Fehlertraining und ein Statistik-Dashboard. Bewusst ohne Framework - läuft vollständig offline als eine einzige HTML-Datei.",
+            "Meine Freundin brauchte eine gezieltes Lernwerkzeug für ihre Examinierte Abschlussprüfung, also habe ich mit ihren Unterlagen eine gebaut. 800+ Prüfungsfragen aus denn verschiedensten Themenbereichen, intelligentes Stichwort-Matching statt exaktem Textvergleich, Fehlertraining und ein Statistik-Dashboard. Bewusst ohne Framework - läuft vollständig offline als eine einzige HTML-Datei.",
           tech: ["HTML5", "CSS3", "JavaScript", "localStorage"],
           repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite"
         },
@@ -84,25 +84,25 @@ export const translations = {
       },
     },
     experience: {
-      title: "Erfahrung & Lebenslauf",
+      title: "Lebenslauf",
       kicker: "Mein Werdegang",
-      work: "Berufserfahrung",
-      education: "Ausbildung",
+      work: "Erfahrung",
+      education: "Weiterbildungen",
       items: {
         work: [
           {
-            period: "2025 – heute",
-            role: "Full-Stack Developer",
-            company: "Digital Agency",
+            period: "01.2025 – heute",
+            role: "Fachinformatiker für Anwendungsentwicklung",
+            company: "GFN Essen",
             description:
-              "Entwicklung von individuellen Kundenprojekten – von Landing Pages bis komplexen Web-Apps.",
+              "Theoretische und praktische IHK-Umschulung in der vollständige Softwareentwicklung: Konzeption, Programmierung, Testing und Dokumentation. Inhalte umfassten objektorientierte Entwicklung mit Python und Java, Datenbankdesign mit SQL, Webentwicklung mit HTML/CSS und JavaScript, Netzwerk- und Clientsysteme, Benutzerschnittstellen-Entwicklung, IT-Sicherheitsschulung sowie Projektmanagement nach agilen Methoden wie Scrum.",
           },
           {
-            period: "2024 – heute",
-            role: "Junior Web Developer",
-            company: "WebStudio",
+            period: "05.2024 – heute",
+            role: "Selbststudium",
+            company: "Programmierung & Softwareentwicklung (E-Learning)",
             description:
-              "Erste Berufserfahrung mit Fokus auf moderne JavaScript-Frameworks und CMS-Systeme.",
+              "Parallel zur Umschulung habe ich durch eigenständige Einarbeitung in Flutter/Dart, React/Next.js, TypeScript und Firebase durch den Bau vollständiger Anwendungen. Aufbau und Administration einer eigenen Heimserver-Infrastruktur (Linux/Debian, Docker, Self-Hosted-Dienste). Aktiver Einsatz von KI-Tools als Entwicklungswerkzeug und zur Optimierung von Workflows.",
           },
         ],
         education: [
@@ -157,7 +157,6 @@ export const translations = {
         projects: "Projects",
         skills: "Skills",
         experience: "Experience",
-        cv: "Resume",
       },
       contactCard: "Get in touch",
     },

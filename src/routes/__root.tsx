@@ -47,7 +47,7 @@ export const Route = createRootRoute({
       { property: "og:description", content: "Portfolio Website von Tejani" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "instagram:site", content: "@wudupuppe_" },
+      { name: "twitter:site", content: "@wudupuppe_" },
     ],
     links: [
       {

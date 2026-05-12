@@ -36,7 +36,7 @@ export function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-gradient-primary text-primary-foreground shadow-glow">
             {`</>`}
           </span>
-          <span className="hidden sm:inline">dev.portfolio</span>
+          <span className="hidden sm:inline">WUDUPUPPE</span>
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
