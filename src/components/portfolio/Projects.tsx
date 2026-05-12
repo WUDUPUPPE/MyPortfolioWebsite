@@ -67,11 +67,11 @@ export function Projects() {
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="projects-scroll flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4">
           {items.map((p, i) => (
             <article
               key={p.name}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-gradient-card backdrop-blur transition-all hover:border-primary/50 hover:shadow-glow"
+              className="snap-start shrink-0 w-[90%] sm:w-[45%] lg:w-[calc(33.333%-1rem)] group relative overflow-hidden rounded-2xl border border-border bg-gradient-card backdrop-blur transition-all hover:border-primary/50 hover:shadow-glow"
             >
               <Carousel
                 opts={{ loop: true }}

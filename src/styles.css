@@ -46,26 +46,26 @@
   --popover-foreground: oklch(0.97 0.01 280);
 
   /* Electric purple primary */
-  --primary: oklch(0.68 0.25 305);
-  --primary-foreground: oklch(0.13 0.02 280);
+  --primary: oklch(59.003% 0.28089 304.997);
+  --primary-foreground: oklch(11.987% 0.02111 312.614);
   --primary-glow: oklch(0.78 0.22 305);
 
   /* Cyan accent */
-  --accent: oklch(0.78 0.16 200);
-  --accent-foreground: oklch(0.13 0.02 280);
+  --accent: oklch(88.525% 0.18882 163.96);
+  --accent-foreground: oklch(13.376% 0.00856 179.994);
 
-  --secondary: oklch(0.27 0.05 280);
-  --secondary-foreground: oklch(0.97 0.01 280);
+  --secondary: oklch(88.525% 0.18882 163.96 / 0.09);
+  --secondary-foreground: oklch(98.431% 0.0132 179.965);
 
-  --muted: oklch(0.24 0.04 280);
-  --muted-foreground: oklch(0.7 0.04 280);
+  --muted: oklch(29.528% 0.03226 176.208);
+  --muted-foreground: oklch(81.465% 0.03842 177.619);
 
   --destructive: oklch(0.65 0.24 25);
   --destructive-foreground: oklch(0.97 0.01 280);
 
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.68 0.25 305);
+  --border: oklch(100% 0.00011 271.152 / 0.1);
+  --input: oklch(88.525% 0.18882 163.96);
+  --ring: oklch(59.003% 0.28089 304.997);
 
   --gradient-hero: radial-gradient(ellipse at top, oklch(0.3 0.15 295 / 0.6), transparent 60%),
     radial-gradient(ellipse at bottom right, oklch(0.35 0.15 220 / 0.4), transparent 60%);
@@ -129,6 +129,23 @@
   }
   .animate-glow-pulse {
     animation: glowPulse 3s ease-in-out infinite;
+  }
+  /* Projekt-Scrollbar */
+  .projects-scroll::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .projects-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .projects-scroll::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
+  }
+
+  .projects-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
   }
 }
 
