@@ -63,16 +63,16 @@
   --destructive: oklch(0.65 0.24 25);
   --destructive-foreground: oklch(0.97 0.01 280);
 
-  --border: oklch(88.525% 0.18882 163.96 / 0.1);
+  --border: oklch(88.525% 0.18882 163.96 / 0.2);
   --input: oklch(88.525% 0.18882 163.96);
   --ring: oklch(59.003% 0.28089 304.997);
 
-  --gradient-hero: radial-gradient(ellipse at top, oklch(0.3 0.15 295 / 0.6), transparent 60%),
-    radial-gradient(ellipse at bottom right, oklch(0.35 0.15 220 / 0.4), transparent 60%);
-  --gradient-primary: linear-gradient(135deg, oklch(0.68 0.25 305), oklch(0.78 0.16 200));
+  --gradient-hero: radial-gradient(ellipse at top, oklch(35.196% 0.16993 304.338 / 0.6), transparent 60%),
+    radial-gradient(ellipse at bottom right, oklch(59.338% 0.1251 164.816 / 0.4), transparent 60%);
+  --gradient-primary: linear-gradient(135deg, oklch(64.446% 0.24451 307.567), oklch(78.645% 0.16766 163.995));
   --gradient-card: linear-gradient(145deg, oklch(0.22 0.05 285 / 0.8), oklch(0.18 0.04 280 / 0.6));
-  --shadow-glow: 0 0 40px oklch(0.68 0.25 305 / 0.35);
-  --shadow-elegant: 0 20px 60px -10px oklch(0.1 0.05 280 / 0.6);
+  --shadow-glow: 0 0 40px oklch(68.645% 0.21935 308.644 / 0.35);
+  --shadow-elegant: 0 20px 60px -10px oklch(20.16% 0.03941 171.219 / 0.6);
 }
 
 @layer base {
@@ -120,7 +120,7 @@
   }
   .grid-bg {
     background-image:
-      linear-gradient(oklch(1 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(oklch(100% 0.00011 271.152 / 0.04) 1px, transparent 1px),
       linear-gradient(90deg, oklch(1 0 0 / 0.04) 1px, transparent 1px);
     background-size: 40px 40px;
   }
