@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/i18n";
-import { Code2, Server, Wrench } from "lucide-react";
+import { Code2, LanguagesIcon, Server, Wrench } from "lucide-react";
 
 interface Skill {
   name: string;
   level: number;
 }
 
-const skillData: { key: "frontend" | "backend" | "tools"; icon: typeof Code2; skills: Skill[] }[] = [
+const skillData: { key: "frontend" | "backend" | "tools" | "softskills" | "languages"; icon: typeof Code2; skills: Skill[] }[] = [
   {
     key: "frontend",
     icon: Code2,
@@ -48,8 +48,31 @@ const skillData: { key: "frontend" | "backend" | "tools"; icon: typeof Code2; sk
       { name: "Self-Hosting (Nextcloud, Bitwarden, Ad Guard-Home, Website, E-Mail)", level: 64 },
       { name: "KI-Tools (Prompting / Integration)", level: 69},
       { name: "Figma / UI Design",  level: 58 },
+      { name: "MS Office (Word, Excel, Access, PowerPoint", level: 76},
+      { name: "Adobe PremierPro",   level: 53},
+      { name: "FL Studios",         level: 54},
     ],
   },
+  {
+    key: "softskills",
+    icon: Wrench,
+    skills: [
+      { name: "Technisches Verständnis", level: 87},
+      { name: "Strukturierte Problemlosefähigkeit", level: 78},
+      { name: "Kundenorientierte Programmierung", level: 68},
+    ]
+  },
+  {
+    key: "languages",
+    icon: LanguagesIcon,
+    skills: [
+      { name: "Deutsch",             level: 100},
+      { name: "Englisch",            level: 78},
+      { name: "Kreole",              level: 35},
+      { name: "Spanisch",            level: 18},
+      { name: "Twie",                level: 29},
+    ]
+  }
 ];
 
 function SkillBar({ name, level, animate }: { name: string; level: number; animate: boolean }) {

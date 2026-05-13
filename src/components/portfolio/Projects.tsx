@@ -19,6 +19,8 @@ import p3a from "@/assets/project-3-a.jpg";
 import p3b from "@/assets/project-3-b.jpg";
 import p4a from "@/assets/project-1-a.jpg";
 import p4b from "@/assets/project-1-b.jpg";
+import p5a from "@/assets/project-1-a.jpg";
+import p5b from "@/assets/project-1-a.jpg";
 
 interface ProjectMeta {
   images: string[];
@@ -47,6 +49,10 @@ const projectsMeta: ProjectMeta[] = [
     images: [p4a, p4b],
     repo: "https://github.com/WUDUPUPPE/App-Launcher"
   },
+  {
+    images: [p5a, p5b],
+    repo: "https://github.com/WUDUPUPPE/CostumerManagement"
+  }
 ];
 
 export function Projects() {

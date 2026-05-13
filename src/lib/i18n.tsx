@@ -81,6 +81,8 @@ export const translations = {
         frontend: "Frontend",
         backend: "Backend",
         tools: "Tools & DevOps",
+        softskills: "Soft Skills",
+        languages: "Sprachen",
       },
     },
     experience: {
@@ -206,6 +208,13 @@ export const translations = {
             "An Android streaming launcher that combines YouTube, Spotify, and Crunchyroll in a single app. Features a login system with BCrypt password hashing, SQLite database, and three API integrations. Built in Java following the Manager pattern and OOP principles — developed as a vocational school project.",
           tech: ["Java", "Android", "SQLite", "YouTube API", "Spotify API", "XML"],
         },
+        {
+          name: "Costumer-Management System",
+          description:
+            "Zur Verwaltung von Nutzerdaten",
+          tech: ["Java", "SQLite", "XML"],
+          repo: "https://github.com/WUDUPUPPE/CostumerManagement"
+        }
       ],
     },
     skills: {
@@ -215,6 +224,8 @@ export const translations = {
         frontend: "Frontend",
         backend: "Backend",
         tools: "Tools & DevOps",
+        softskills: "Soft Skills",
+        languages: "Languages",
       },
     },
     experience: {
