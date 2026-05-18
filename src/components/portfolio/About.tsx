@@ -29,7 +29,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-2xl border border-border shadow-elegant">
               <img
                 src={avatar}
-                alt="Portrait of the developer"
+                alt="Portrait of the junior developer"
                 width={896}
                 height={1152}
                 loading="lazy"

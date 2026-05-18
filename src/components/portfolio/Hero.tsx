@@ -52,12 +52,6 @@ export function Hero() {
             >
               {t.hero.cta.experience}
             </a>
-            <a
-              href="#experience"
-              className="inline-flex items-center rounded-full border border-border bg-card/40 px-6 py-3 text-sm font-semibold backdrop-blur transition-colors hover:border-primary/60"
-            >
-              {t.hero.cta.cv}
-            </a>
           </div>
         </div>
 
