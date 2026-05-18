@@ -89,7 +89,7 @@ export function Hero() {
             </li>
             <li>
               <a
-                href="mailto:tejani-awudu.de"
+                href="mailto:kontakt@tejani-awudu.de"
                 className="flex items-center gap-3 text-muted-foreground transition-colors hover:text-primary"
               >
                 <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary">
