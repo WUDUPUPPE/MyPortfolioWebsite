@@ -27,7 +27,7 @@ export const translations = {
     about: {
       title: "Über mich",
       kicker: "Wer ich bin",
-      bio: "Meine vielseitigen Berufserfahrungen machen mich anpassungsfähig, strukturiert und lernbereit. Analytisches Denken, IT-Kenntnisse und Sorgfalt helfen mir dabei, Aufgaben präzise und zielorientiert lösen. Neben der Anwendungsentwicklung betreibe ich einen eigenen Heimserver und sammle aktiv Erfahrungen in den Bereichen Docker, Nginx, Cloudflare DNS und SSL, da ich verstehen möchte, wie Software nicht nur entsteht, sondern auch Verwaltet wird und in die Welt kommt. Als teamorientierter Entwickler suche ich aktiv nach Herausforderungen, die mich fachlich und persönlich weiterbringen.",
+      bio: "Meine vielseitigen Berufserfahrungen machen mich anpassungsfähig, strukturiert und lernbereit. Analytisches Denken, IT-Kenntnisse und Sorgfalt helfen mir dabei, Aufgaben präzise und zielorientiert lösen. Neben der Anwendungsentwicklung betreibe ich einen eigenen Heimserver und sammle aktiv Erfahrungen in den Bereichen Docker, Nginx, Cloudflare DNS und SSL, da ich verstehen möchte, wie Software nicht nur entsteht, sondern auch verwaltet wird und in die Welt kommt. Als teamorientierter Entwickler suche ich aktiv nach Herausforderungen, die mich fachlich und persönlich weiterbringen.",
       stats: {
         years: "Jahre Erfahrung",
         projects: "Abgeschlossene Projekte",
@@ -99,26 +99,58 @@ export const translations = {
               "Theoretische und praktische IHK-Umschulung in der vollständige Softwareentwicklung: Konzeption, Programmierung, Testing und Dokumentation. Inhalte umfassten objektorientierte Entwicklung mit Python und Java, Datenbankdesign mit SQL, Webentwicklung mit HTML/CSS und JavaScript, Netzwerk- und Clientsysteme, Benutzerschnittstellen-Entwicklung, IT-Sicherheitsschulung sowie Projektmanagement nach agilen Methoden wie Scrum.",
           },
           {
+            period: "06.2024 -  11.2024",
+            role: "Berufliche Neuorientierung mit Bewilligung des Bildungsgutschein",
+            company: "Eigeniniziative",
+            description: "Zielgerichtete Vorbereitung auf die Umschulung. Aufbau erster Programmierkenntnise und Recherche für die Zunkft des IT Berufsbildes.",
+          },
+          {
+            period: "04.2023 -  05.2024",
+            role: "Bauwerksmechaniker für Abbruch und Betontrenntechnik",
+            company: "Hermann Bergfort GmbH, Essen",
+            description: "Demotage und Abbrucharbeiten von Gebäuden, Nutzung digitaler Dokumentationssysteme zur Erfassung von Arbeitsprozessen.",
+          },
+          {
+            period: "04.2022 -  02.2023",
+            role: "Fachmann für Systemgastronomie",
+            company: "PURINO, Mönchengladbach",
+            description: "Unterstützung der Logistik, Bestellungen und Service und die umsetzung zuverlässiger Arbeit unter Zeitdruck im Team",
+          }
+        ],
+        education: [
+          {
             period: "05.2024 – heute",
             role: "Selbststudium",
             company: "Programmierung & Softwareentwicklung (E-Learning)",
             description:
               "Parallel zur Umschulung habe ich durch eigenständige Einarbeitung in Flutter/Dart, React/Next.js, TypeScript und Firebase durch den Bau vollständiger Anwendungen. Aufbau und Administration einer eigenen Heimserver-Infrastruktur (Linux/Debian, Docker, Self-Hosted-Dienste). Aktiver Einsatz von KI-Tools als Entwicklungswerkzeug und zur Optimierung von Workflows sowie Prompt Engineering.",
           },
-        ],
-        education: [
           {
-            period: "2016 – 2019",
-            role: "B.Sc. Informatik",
-            company: "Technische Universität",
+            period: "04.2026",
+            role: "IT-Sicherheitsschulung",
+            company: "GFN Essen",
             description:
-              "Schwerpunkt Software Engineering, Datenbanken und Webtechnologien.",
+              "Schulung zur übermittlung der Sichertheitskenntnisse in der IT.",
           },
           {
-            period: "2014 – 2016",
-            role: "Fachabitur Technik",
-            company: "Berufskolleg",
-            description: "Schwerpunkt Informationstechnik mit Programmier-Grundlagen.",
+            period: "02.2026",
+            role: "Scrum",
+            company: "GFN Essen",
+            description:
+              ".",
+          },
+          {
+            period: "08.2025",
+            role: "PCEP Certified Entry-Level Python Programmer",
+            company: "Python Institute",
+            description:
+              "Zertifizierung der Grundlagen in der Programmierung und Verständnis von Python.",
+          },
+          {
+            period: "",
+            role: "",
+            company: "",
+            description: ".",
           },
         ],
       },
