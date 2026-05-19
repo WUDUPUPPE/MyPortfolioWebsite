@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Portfolio von Tejani Awudu Mohammed — Entwickler. Projekte, Skills, Erfahrung und Kontakt.",
+          "Portfolio von Tejani Awudu Mohammed — Junior Entwickler. Projekte, Skills, Erfahrung und Kontakt.",
       },
-      { property: "og:title", content: "Tejani Awudu Mohammed — Entwickler Portfolio" },
+      { property: "og:title", content: "Tejani Awudu Mohammed — Junior Entwickler Portfolio" },
       {
         property: "og:description",
         content:

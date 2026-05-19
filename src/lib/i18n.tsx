@@ -14,14 +14,13 @@ export const translations = {
     },
     hero: {
       greeting: "Hallo, ich bin",
-      role: "Fachinformatiker für Anwendungsentwicklung",
+      role: "Fachinformatiker Anwendungsentwicklung",
       tagline:
         "Mit Leidenschaft entwickle ich Web- und Mobile-Anwendungen. Zusätzlich vertiefe ich mich in Android, Dart/Flutter sowie Game-Dev und bringe praktische Erfahrung mit durch eigener Server-Administration und Hosting.",
       cta: {
         projects: "Projekte",
         skills: "Skills",
-        experience: "Erfahrung",
-        cv: "Weiterbildung",
+        experience: "Lebenslauf",
       },
       contactCard: "Kontakt",
     },
