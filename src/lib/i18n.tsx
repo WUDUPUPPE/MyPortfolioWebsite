@@ -109,14 +109,32 @@ export const translations = {
             period: "04.2023 -  05.2024",
             role: "Bauwerksmechaniker für Abbruch und Betontrenntechnik",
             company: "Hermann Bergfort GmbH, Essen",
-            description: "Demotage und Abbrucharbeiten von Gebäuden, Nutzung digitaler Dokumentationssysteme zur Erfassung von Arbeitsprozessen.",
+            description: "Demotage und Abbrucharbeiten an Gebäuden, Nutzung digitaler Dokumentationssysteme zur Erfassung von Arbeitsprozessen.",
           },
           {
             period: "04.2022 -  02.2023",
             role: "Fachmann für Systemgastronomie",
             company: "PURINO, Mönchengladbach",
-            description: "Unterstützung der Logistik, Bestellungen und Service und die umsetzung zuverlässiger Arbeit unter Zeitdruck im Team",
-          }
+            description: "Koordination von Logistik, Bestellwesen und Service – zuverlässige Teamarbeit unter hohem Zeitdruck.",
+          },
+          {
+            period: "02.2020 -  12.2020",
+            role: "Fachmann für Garten- und Landschaftsbau",
+            company: "Loddemann GmbH, Versmold",
+            description: "Umsetzung von Garten- und Landschaftsbauprojekten im Team.",
+          },
+          {
+            period: "03.2019 - 09.2019",
+            role: "Verkäufer und Fachlagerist",
+            company: "Netto GmbH, Versmold",
+            description: "Kommissionierung, Warenannahme sowie Kundenbetreuung (Zeitbefristeter Arbeitgeber neben der Hochschule).",
+          },
+          {
+            period: "07.2018 - 02.2019",
+            role: "Facharbeiter für Straßen und Tiefbauarbeiten",
+            company: "Wagemann GmbH, Versmold",
+            description: "Einsatz digitaler Vermessungssysteme und GPS-gestützter Technologien zur präzisen Vermessung von Bauprojekten.",
+          },
         ],
         education: [
           {
@@ -127,31 +145,51 @@ export const translations = {
               "Parallel zur Umschulung habe ich durch eigenständige Einarbeitung in Flutter/Dart, React/Next.js, TypeScript und Firebase durch den Bau vollständiger Anwendungen. Aufbau und Administration einer eigenen Heimserver-Infrastruktur (Linux/Debian, Docker, Self-Hosted-Dienste). Aktiver Einsatz von KI-Tools als Entwicklungswerkzeug und zur Optimierung von Workflows sowie Prompt Engineering.",
           },
           {
+            period: "05.2026",
+            role: "KI-Führerschein",
+            company: "GFN Essen",
+            description:
+              "Praxisorientiertes Wissen zur verantwortungsvollen KI-Nutzung: Risikomanagement, Grundlagen des Promptings und ethische Leitlinien im Umgang mit KI-Systemen.",
+          },
+          {
             period: "04.2026",
             role: "IT-Sicherheitsschulung",
             company: "GFN Essen",
             description:
-              "Schulung zur übermittlung der Sichertheitskenntnisse in der IT.",
+              "Schulung zu Informationssicherheit, Erkennung und Vermeidung von Bedrohungsszenarien sowie Umsetzung konkreter Schutzmaßnahmen.",
           },
           {
             period: "02.2026",
             role: "Scrum",
             company: "GFN Essen",
             description:
-              ".",
+              "Grundlagen agiler Projektarbeit nach dem Scrum-Framework: Rollen, Events und Artefakte in der Praxis.",
           },
           {
             period: "08.2025",
             role: "PCEP Certified Entry-Level Python Programmer",
             company: "Python Institute",
             description:
-              "Zertifizierung der Grundlagen in der Programmierung und Verständnis von Python.",
+              "Offizielle Zertifizierung der Python-Grundlagen: Programmierlogik, Datentypen, Kontrollstrukturen und Funktionen.",
           },
           {
-            period: "",
-            role: "",
-            company: "",
-            description: ".",
+            period: "03.2024",
+            role: "Ersthelfer & Elektronisch unterwiesene Person (EUP)",
+            company: "Hermann Bergfort, Essen",
+            description:
+              "Zertifizierte Erste-Hilfe-Ausbildung sowie Einweisung als elektronisch unterwiesene Person im gewerblichen Umfeld.",
+          },
+          {
+            period: "08.2019 - 02.2020",
+            role: "Hoschschulreife",
+            company: "Westfalen-Kolleg, Bielefeld",
+            description: "Erwerb der allgemeinen Hochschulreife auf dem zweiten Bildungsweg – Abbruch aufgrund finanzieller Engpässe.",
+          },
+          {
+            period: "08.2015 - 05.2018",
+            role: "Ausbildung zum Fleischer",
+            company: "Heinrich Nölke GmbH & Co.KG, Versmold",
+            description: "Abgeschlossene Berufsausbildung mit Einblick in Produktionsprozesse, Qualitätskontrolle und Lebensmittelhygiene.",
           },
         ],
       },
