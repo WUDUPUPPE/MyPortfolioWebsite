@@ -102,7 +102,7 @@ export const translations = {
             period: "06.2024 -  11.2024",
             role: "Berufliche Neuorientierung mit Bewilligung des Bildungsgutschein",
             company: "Eigeniniziative",
-            description: "Zielgerichtete Vorbereitung auf die Umschulung. Aufbau erster Programmierkenntnise und Recherche für die Zunkft des IT Berufsbildes.",
+            description: "Zielgerichtete Vorbereitung auf die Umschulung. Aufbau erster Programmierkenntnise.",
           },
           {
             period: "04.2023 -  05.2024",
