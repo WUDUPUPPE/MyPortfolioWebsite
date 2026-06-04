@@ -68,7 +68,3 @@ Jedes Projekt als Card mit:
 - Progress Bars via `src/components/ui/progress.tsx` + Intersection Observer
 - Dark Theme als Default in `src/styles.css` (root bekommt `.dark` Klasse)
 - Akzentfarbe wird im Design-System als `--primary` Token gesetzt
-
-## Platzhalter-Inhalte
-
-Da ich deine echten Daten noch nicht habe, fülle ich zunächst mit aussagekräftigen Platzhaltern (Beispielname, 3 Demo-Projekte, typische Dev-Skills). Du kannst die Inhalte danach Schritt für Schritt mit deinen echten Texten, Bildern, Repos und Videos austauschen – sag mir einfach welche Details du teilen möchtest.
