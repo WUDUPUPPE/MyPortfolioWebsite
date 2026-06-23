@@ -71,6 +71,12 @@ export const translations = {
           tech: ["Java", "Android", "SQLite", "YouTube API", "Spotify API", "XML"],
           repo: "https://github.com/WUDUPUPPE/App-Launcher"
         },
+        {
+          name: "STEMgraph Scripte Teilprojekt",
+          description: "Im Praktikum habe ich mehrere Bash-Skripte gebaut, um STEMgraph-Challenges automatisiert aus GitHub zu holen, Abhängigkeiten rekursiv aufzulösen und Teilpfade zwischen Challenges zu bestimmen. Zusätzlich benutze ich für meine Dokumentation: LaTeX, Makefile und GitHub Releases um die Versionen sauber nachvollziehbar und automatisch als PDF bauen zulassen.",
+          tech: ["Bash", "Git", "JSON",  "LaTeX", "Makefile", "GitHub Actions/Workflow-Automatisierung"],
+          repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts",
+        },
       ],
     },
     skills: {
@@ -79,7 +85,8 @@ export const translations = {
       categories: {
         frontend: "Frontend",
         backend: "Backend",
-        tools: "Tools & DevOps",
+        tools: "Tools / Workflows / DevOps",
+        design: "Design / UI",
         softskills: "Soft Skills",
         languages: "Sprachen",
       },

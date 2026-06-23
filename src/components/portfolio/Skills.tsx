@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/i18n";
-import { Code2, LanguagesIcon, Server, Wrench } from "lucide-react";
+import { Code2, LanguagesIcon, Paintbrush, Server, Wrench } from "lucide-react";
 
 interface Skill {
   name: string;
   level: number;
 }
 
-const skillData: { key: "frontend" | "backend" | "tools" | "softskills" | "languages"; icon: typeof Code2; skills: Skill[] }[] = [
+const skillData: { key: "frontend" | "backend" | "tools" | "design" | "softskills" | "languages"; icon: typeof Code2; skills: Skill[] }[] = [
   {
     key: "frontend",
     icon: Code2,
@@ -18,48 +18,51 @@ const skillData: { key: "frontend" | "backend" | "tools" | "softskills" | "langu
       { name: "HTML / CSS",         level: 71 },
       { name: "TailwindCSS",        level: 59 },
       { name: "JavaScript",         level: 43 },
-      { name: "Android XML Layouts",level: 52 },
-      { name: "Godot (GDScript)",   level: 25 },
     ],
   },
   {
     key: "backend",
     icon: Server,
     skills: [
-      { name: "Java / Android SDK", level: 52 },
       { name: "Python",             level: 72 },
       { name: "Firebase / Firestore",level: 72 },
       { name: "SQLite / MariaDB",   level: 59 },
-      { name: "REST APIs",          level: 69 },
-      { name: "ACRCloud API",       level: 62 }, // Musikerkennung (SONAR)
-      { name: "YouTube API",        level: 59 },
+      { name: "REST APIs / ACRCloud API / YouTube API",          level: 69 },
       { name: "Node.js",            level: 60 },
+      { name: "BASH",               level: 52 },
     ],
   },
   {
     key: "tools",
     icon: Wrench,
     skills: [
-      { name: "Git / GitHub",       level: 74 },
+      { name: "Git / GitHub",       level: 76 },
+      { name: "GitHub Actions",     level: 65},
       { name: "Docker / Portainer", level: 66 },
+      { name: "Makefile / LaTeX",   level: 69 },
       { name: "Linux (Debian)",     level: 46 },
-      { name: "Android Studio",     level: 68 },
-      { name: "VS Code",            level: 76 },
+      { name: "Visual Studio Code / Android Studio", level: 75 },
       { name: "Self-Hosting (Nextcloud, Bitwarden, Ad Guard-Home, Website, E-Mail)", level: 64 },
       { name: "KI-Tools (Prompting / Integration)", level: 69},
-      { name: "Figma / UI Design",  level: 58 },
-      { name: "MS Office (Word, Excel, Access, PowerPoint", level: 76},
-      { name: "Adobe PremierPro",   level: 53},
-      { name: "FL Studios",         level: 54},
+    ],
+  },
+  {
+    key: "design",
+    icon: Paintbrush,
+    skills: [
+      { name: "Figma / UI Design",  level: 61 },
+      { name: "UI / UX Design",     level: 68 },
     ],
   },
   {
     key: "softskills",
     icon: Wrench,
     skills: [
-      { name: "Technisches Verständnis", level: 87},
-      { name: "Strukturierte Problemlosefähigkeit", level: 78},
-      { name: "Kundenorientierte Programmierung", level: 68},
+      { name: "Technisches Verständnis",            level: 87},
+      { name: "Strukturierte Problemlösefähigkeit", level: 78},
+      { name: "Kundenorientierte Programmierung",   level: 68},
+      { name: "Analytisches Denken",                level: 72},
+      { name: "Selbstständiges Arbeiten",              level: 80},
     ]
   },
   {
