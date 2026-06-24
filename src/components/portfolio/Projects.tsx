@@ -11,20 +11,18 @@ import {
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import Autoplay from "embla-carousel-autoplay";
 
-import p1a from "@/assets/project-1-a.jpg";
-import p1b from "@/assets/project-1-b.jpg";
-import p2a from "@/assets/ContainerList.png";
-import p2b from "@/assets/StackList.png";
-import p3a from "@/assets/ExamWebsite.png";
-import p3b from "@/assets/AlleKrankheitsbilder.png";
-import p3c from "@/assets/Fragen.png";
-import p4a from "@/assets/project-1-a.jpg";
-import p4b from "@/assets/project-1-b.jpg";
-import p5a from "@/assets/project-1-a.jpg";
-import p5b from "@/assets/project-1-a.jpg";
-import p6a from "@/assets/All.png";
-import p6b from "@/assets/Rekursiv.png";
-import p6c from "@/assets/Subgraph.png";
+import musik_app from "@/assets/SonarHome.png";
+import musik_app2 from "@/assets/SonarDemo.mp4";
+import scripte1 from "@/assets/All.png";
+import scripte2 from "@/assets/Rekursiv.png";
+import scripte3  from "@/assets/Subgraph.png";
+import server1 from "@/assets/ContainerList.png";
+import server2 from "@/assets/StackList.png";
+import Lernwebsite1 from "@/assets/ExamWebsite.png";
+import Lernwebsite2 from "@/assets/AlleKrankheitsbilder.png";
+import Lernwebsite3 from "@/assets/Fragen.png";
+import streamz1 from "@/assets/project-1-a.jpg";
+import streamz2 from "@/assets/project-1-b.jpg";
 
 interface ProjectMeta {
   images: string[];
@@ -35,32 +33,28 @@ interface ProjectMeta {
 
 const projectsMeta: ProjectMeta[] = [
   {
-    images: [p1a, p1b],
+    images: [musik_app],
     repo: "https://github.com/WUDUPUPPE/musik_app",
-    demo: "",
+    demo: musik_app2,
     video: "",
   },
   {
-    images: [p2a, p2b],
+    images: [scripte1, scripte2, scripte3],
+    repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts"
+  },
+  {
+    images: [server1, server2],
     repo: "",
   },
   {
-    images: [p3a, p3b, p3c],
+    images: [Lernwebsite1, Lernwebsite2, Lernwebsite3],
     repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite",
     video: "",
   },
   {
-    images: [p4a, p4b],
+    images: [streamz1, streamz2],
     repo: "https://github.com/WUDUPUPPE/App-Launcher"
   },
-  {
-    images: [p5a, p5b],
-    repo: "https://github.com/WUDUPUPPE/CostumerManagement"
-  },
-  {
-    images: [p6a, p6b, p6c],
-    repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts"
-  }
 ];
 
 export function Projects() {
