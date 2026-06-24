@@ -15,14 +15,16 @@ import p1a from "@/assets/project-1-a.jpg";
 import p1b from "@/assets/project-1-b.jpg";
 import p2a from "@/assets/project-2-a.jpg";
 import p2b from "@/assets/project-2-b.jpg";
-import p3a from "@/assets/project-3-a.jpg";
-import p3b from "@/assets/project-3-b.jpg";
+import p3a from "@/assets/ExamWebsite.png";
+import p3b from "@/assets/AlleKrankheitsbilder.png";
+import p3c from "@/assets/Fragen.png";
 import p4a from "@/assets/project-1-a.jpg";
 import p4b from "@/assets/project-1-b.jpg";
 import p5a from "@/assets/project-1-a.jpg";
 import p5b from "@/assets/project-1-a.jpg";
-import p6a from "@/assets/project-1-a.jpg";
-import p6b from "@/assets/project-1-a.jpg";
+import p6a from "@/assets/All.png";
+import p6b from "@/assets/Rekursiv.png";
+import p6c from "@/assets/Subgraph.png";
 
 interface ProjectMeta {
   images: string[];
@@ -43,7 +45,7 @@ const projectsMeta: ProjectMeta[] = [
     repo: "",
   },
   {
-    images: [p3a, p3b],
+    images: [p3a, p3b, p3c],
     repo: "https://github.com/WUDUPUPPE/Pflegefachkraft_Lernwebsite",
     video: "",
   },
@@ -56,8 +58,8 @@ const projectsMeta: ProjectMeta[] = [
     repo: "https://github.com/WUDUPUPPE/CostumerManagement"
   },
   {
-    images: [p6a, p6b],
-    repo: ""
+    images: [p6a, p6b, p6c],
+    repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts/tree/main"
   }
 ];
 

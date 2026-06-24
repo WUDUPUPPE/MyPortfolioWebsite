@@ -74,7 +74,7 @@ export const translations = {
         {
           name: "STEMgraph Scripte Teilprojekt",
           description: "Im Praktikum habe ich mehrere Bash-Skripte gebaut, um STEMgraph-Challenges automatisiert aus GitHub zu holen, Abhängigkeiten rekursiv aufzulösen und Teilpfade zwischen Challenges zu bestimmen. Zusätzlich benutze ich für meine Dokumentation: LaTeX, Makefile und GitHub Releases um die Versionen sauber nachvollziehbar und automatisch als PDF bauen zulassen.",
-          tech: ["Bash", "Git", "JSON",  "LaTeX", "Makefile", "GitHub Actions/Workflow-Automatisierung"],
+          tech: ["Bash", "Git", "JSON",  "LaTeX", "Makefile", "GitHub Actions/Workflows"],
           repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts",
         },
       ],
@@ -124,7 +124,7 @@ export const translations = {
             description: "Koordination von Logistik, Bestellwesen und Service – zuverlässige Teamarbeit unter hohem Zeitdruck.",
           },
           {
-            period: "02.2020 -  12.2020",
+            period: "02.2020 - 12.2020",
             role: "Fachmann für Garten- und Landschaftsbau",
             company: "Loddemann GmbH, Versmold",
             description: "Umsetzung von Garten- und Landschaftsbauprojekten im Team.",
