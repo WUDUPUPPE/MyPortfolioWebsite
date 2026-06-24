@@ -13,8 +13,8 @@ import Autoplay from "embla-carousel-autoplay";
 
 import p1a from "@/assets/project-1-a.jpg";
 import p1b from "@/assets/project-1-b.jpg";
-import p2a from "@/assets/project-2-a.jpg";
-import p2b from "@/assets/project-2-b.jpg";
+import p2a from "@/assets/ContainerList.png";
+import p2b from "@/assets/StackList.png";
 import p3a from "@/assets/ExamWebsite.png";
 import p3b from "@/assets/AlleKrankheitsbilder.png";
 import p3c from "@/assets/Fragen.png";
@@ -59,7 +59,7 @@ const projectsMeta: ProjectMeta[] = [
   },
   {
     images: [p6a, p6b, p6c],
-    repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts/tree/main"
+    repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts"
   }
 ];
 
