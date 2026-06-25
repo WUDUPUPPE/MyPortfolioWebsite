@@ -35,6 +35,24 @@ export const translations = {
         coffee: "Tassen Kaffee",
       },
     },
+    currentStatus: {
+      title: "Aktueller Fokus",
+      kicker: "Woran ich gerade arbeite",
+      items: {
+        currentWork: {
+          title: "Aktuell arbeite ich an",
+          text: "Ich entwickle meine Bewerbungswebsite weiter und arbeite parallel an Projekten aus meinem Praktikum, vor allem an strukturierter Umsetzung und technischer Dokumentation.",
+        },
+        learning: {
+          title: "Aktuell vertiefe ich",
+          text: "Zurzeit beschäftige ich mich besonders mit Bash, Git/GitHub-Workflows, React, TypeScript und dem sauberen Aufbau technischer Projekte.",
+        },
+        nextGoal: {
+          title: "Nächstes Ziel",
+          text: "Ich möchte mein technisches Fundament weiter ausbauen und Projekte so umsetzen, dass sie nicht nur funktionieren, sondern auch nachvollziehbar und professionell präsentiert werden.",
+        },
+      },
+    },
     projects: {
       title: "Projekte",
       kicker: "Eine Auswahl meiner Arbeiten",
@@ -54,7 +72,7 @@ export const translations = {
         {
           name: "STEMgraph Scripte Teilprojekt",
           description: "Im Praktikum habe ich mehrere Bash-Skripte gebaut, um STEMgraph-Challenges automatisiert aus GitHub zu holen, Abhängigkeiten rekursiv aufzulösen und Teilpfade zwischen Challenges zu bestimmen. Zusätzlich benutze ich für meine Dokumentation: LaTeX, Makefile und GitHub Releases um die Versionen sauber nachvollziehbar und automatisch als PDF bauen zulassen.",
-          tech: ["Bash", "Git", "JSON",  "LaTeX", "Makefile", "GitHub Actions/Workflows"],
+          tech: ["Bash", "Git", "JSON", "LaTeX", "Makefile", "GitHub Actions/Workflows"],
           repo: "https://github.com/WUDUPUPPE/STEMgraph-Scripts",
         },
         {

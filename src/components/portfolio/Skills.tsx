@@ -132,7 +132,7 @@ export function Skills() {
           {skillData.map(({ key, icon: Icon, skills }) => (
             <div
               key={key}
-              className="rounded-2xl border border-border bg-gradient-card p-6 backdrop-blur transition-colors hover:border-primary/40"
+              className="group relative overflow-hidden rounded-2xl border border-border/70 bg-card/60 p-6 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg"
             >
               <div className="mb-6 flex items-center gap-3">
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-primary text-primary-foreground">
