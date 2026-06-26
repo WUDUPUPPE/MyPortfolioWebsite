@@ -34,7 +34,9 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <I18nProvider>
-      <div className="dark min-h-screen bg-background text-foreground">
+      <div className="dark relative min-h-screen bg-background text-foreground">
+        <div className="pointer-events-none absolute inset-0 grid-bg opacity-30" />
+        <div className="pointer-events-none absolute left-1/2 top-0 h-[900px] w-[900px] -translate-x-1/2 rounded-full bg-primary/10 blur-[160px]" />
         <Navbar />
         <main>
           <Hero />

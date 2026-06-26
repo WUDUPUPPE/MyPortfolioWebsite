@@ -35,8 +35,8 @@ const projectsMeta: ProjectMeta[] = [
   {
     images: [musik_app],
     repo: "https://github.com/WUDUPUPPE/musik_app",
-    demo: musik_app2,
-    video: "",
+    demo: "",
+    video: musik_app2,
   },
   {
     images: [scripte1, scripte2, scripte3],

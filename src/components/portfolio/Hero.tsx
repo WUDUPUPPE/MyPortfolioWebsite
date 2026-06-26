@@ -10,9 +10,6 @@ export function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden pt-24"
     >
       {/* Grid background */}
-      <div className="absolute inset-0 grid-bg opacity-40" aria-hidden />
-      <div className="absolute left-1/2 top-1/3 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-primary/20 blur-[120px]" aria-hidden />
-
       <div className="relative mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-6 py-12 lg:grid-cols-[1fr_auto] lg:gap-16">
         {/* Left: Hero content */}
         <div className="animate-fade-in-up">
