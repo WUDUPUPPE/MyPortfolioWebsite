@@ -17,6 +17,7 @@ export function Navbar() {
 
   const links = [
     { href: "#about", label: t.nav.about },
+    { href: "#current-status", label: t.nav.currentStatus },
     { href: "#projects", label: t.nav.projects },
     { href: "#skills", label: t.nav.skills },
     { href: "#experience", label: t.nav.experience },
