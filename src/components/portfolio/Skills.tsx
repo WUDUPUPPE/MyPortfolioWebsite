@@ -1,79 +1,80 @@
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "@/lib/i18n";
+import { Github } from "lucide-react";
 import { Code2, LanguagesIcon, Paintbrush, Server, Wrench } from "lucide-react";
 
 interface Skill {
   name: string;
   level: number;
 }
-
+const username = "wudupuppe";
 const skillData: { key: "frontend" | "backend" | "tools" | "design" | "softskills" | "languages"; icon: typeof Code2; skills: Skill[] }[] = [
   {
     key: "frontend",
     icon: Code2,
     skills: [
-      { name: "Flutter / Dart",     level: 73 },
-      { name: "React / Next.js",    level: 53 },
-      { name: "TypeScript",         level: 40 },
-      { name: "HTML / CSS",         level: 71 },
-      { name: "TailwindCSS",        level: 59 },
-      { name: "JavaScript",         level: 43 },
+      { name: "Flutter / Dart", level: 73 },
+      { name: "React / Next.js", level: 53 },
+      { name: "TypeScript", level: 40 },
+      { name: "HTML / CSS", level: 71 },
+      { name: "TailwindCSS", level: 59 },
+      { name: "JavaScript", level: 43 },
     ],
   },
   {
     key: "backend",
     icon: Server,
     skills: [
-      { name: "Python",             level: 72 },
-      { name: "Firebase / Firestore",level: 72 },
-      { name: "SQLite / MariaDB",   level: 59 },
-      { name: "REST APIs / ACRCloud API / YouTube API",          level: 69 },
-      { name: "Node.js",            level: 60 },
-      { name: "BASH",               level: 52 },
+      { name: "Python", level: 72 },
+      { name: "Firebase / Firestore", level: 72 },
+      { name: "SQLite / MariaDB", level: 59 },
+      { name: "REST APIs / ACRCloud API / YouTube API", level: 69 },
+      { name: "Node.js", level: 60 },
+      { name: "BASH", level: 52 },
     ],
   },
   {
     key: "tools",
     icon: Wrench,
     skills: [
-      { name: "Git / GitHub",       level: 76 },
-      { name: "GitHub Actions",     level: 65},
+      { name: "Git / GitHub", level: 76 },
+      { name: "GitHub Actions", level: 65 },
       { name: "Docker / Portainer", level: 66 },
-      { name: "Makefile / LaTeX",   level: 69 },
-      { name: "Linux (Debian)",     level: 46 },
+      { name: "Makefile / LaTeX", level: 69 },
+      { name: "Linux (Debian)", level: 46 },
       { name: "Visual Studio Code / Android Studio", level: 75 },
       { name: "Self-Hosting (Nextcloud, Bitwarden, Ad Guard-Home, Website, E-Mail)", level: 64 },
-      { name: "KI-Tools (Prompting / Integration)", level: 69},
+      { name: "KI-Tools (Prompting / Integration)", level: 69 },
     ],
   },
   {
     key: "design",
     icon: Paintbrush,
     skills: [
-      { name: "Figma / UI Design",  level: 61 },
-      { name: "UI / UX Design",     level: 68 },
+      { name: "Figma / UI Design", level: 61 },
+      { name: "UI / UX Design", level: 68 },
     ],
   },
   {
     key: "softskills",
     icon: Wrench,
     skills: [
-      { name: "Technisches Verständnis",            level: 87},
-      { name: "Strukturierte Problemlösefähigkeit", level: 78},
-      { name: "Kundenorientierte Programmierung",   level: 68},
-      { name: "Analytisches Denken",                level: 72},
-      { name: "Selbstständiges Arbeiten",              level: 80},
+      { name: "Technisches Verständnis", level: 87 },
+      { name: "Strukturierte Problemlösefähigkeit", level: 78 },
+      { name: "Kundenorientierte Programmierung", level: 68 },
+      { name: "Analytisches Denken", level: 72 },
+      { name: "Selbstständiges Arbeiten", level: 80 },
     ]
   },
   {
     key: "languages",
     icon: LanguagesIcon,
     skills: [
-      { name: "Deutsch",             level: 100},
-      { name: "Englisch",            level: 78},
-      { name: "Kreole",              level: 35},
-      { name: "Spanisch",            level: 18},
-      { name: "Twie",                level: 29},
+      { name: "Deutsch", level: 100 },
+      { name: "Englisch", level: 78 },
+      { name: "Kreole", level: 35 },
+      { name: "Spanisch", level: 18 },
+      { name: "Twie", level: 29 },
     ]
   }
 ];
@@ -147,6 +148,17 @@ export function Skills() {
               </div>
             </div>
           ))}
+          <div className="group relative overflow-hidden rounded-2xl border border-border/70 bg-card/60 p-6 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg">
+            <div className="flex items-center justify-between">
+              
+            </div>
+
+            <img
+              src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=transparent&hide_border=true&title_color=ffffff&text_color=ffffff`}
+              alt="Top Languages"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
