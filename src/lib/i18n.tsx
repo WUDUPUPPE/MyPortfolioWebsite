@@ -42,7 +42,7 @@ export const translations = {
       items: {
         currentWork: {
           title: "Aktuell arbeite ich an",
-          text: "Ich arbeite an meinem Abschlussprojekt für die IHK wo ich ein Frontend für eine Lernwebsite baue und die Logik hinter dem Backend verstehe und mit Teilprojekt \"Automatisierte Abhängigkeitsauflösung mit Bash und Git\" umgesetzt habe.",
+          text: "Ich arbeite an meinem Abschlussprojekt für die IHK wo ich ein Frontend für eine Lernwebsite baue und die Logik von dem Backend verstehe und mit Teilprojekt \"Automatisierte Abhängigkeitsauflösung mit Bash und Git\" umgesetzt habe.",
         },
         learning: {
           title: "Aktuell vertiefe ich",
